@@ -1,0 +1,9 @@
+# Dependências do Node.js
+node_modules/
+
+# Outros exemplos de itens que você pode querer ignorar
+.DS_Store
+dist/
+build/
+.env
+*.log
