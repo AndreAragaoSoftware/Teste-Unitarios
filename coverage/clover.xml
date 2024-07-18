@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1721304834771" clover="3.2.0">
-  <project timestamp="1721304834772" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="4" coveredelements="4" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
-    <file name="index.js" path="D:\Programação\Node\Alura\Teste-Unitarios\index.js">
+<coverage generated="1721320394271" clover="3.2.0">
+  <project timestamp="1721320394271" name="All files">
+    <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="10" elements="31" coveredelements="31" complexity="0" loc="19" ncloc="19" packages="2" files="3" classes="3"/>
+    <package name="Teste-Unitarios">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="3" count="1" type="stmt"/>
-    </file>
+      <file name="index.js" path="D:\Programação\Node\Alura\Teste-Unitarios\index.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Teste-Unitarios.carrinho">
+      <metrics statements="17" coveredstatements="17" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
+      <file name="carrinho.js" path="D:\Programação\Node\Alura\Teste-Unitarios\carrinho\carrinho.js">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="26" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+      <file name="item.js" path="D:\Programação\Node\Alura\Teste-Unitarios\carrinho\item.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
