@@ -56,11 +56,16 @@ describe('GET em /editoras/id', () => {
   });
 });
 
+// testando cada coluna da tabela
 describe('PUT em /editoras/id', () => {
-    it('Deve alterar o campo nome', async() => {
+    test.each([
+        ['nome', {nome: 'Casa do Código'}],
+        ['cidade', {cidade: 'SP'}],
+        ['email', {email: 'cdc@cdc.com'}],
+    ])('Deve alterar o campo %s', async(chave, param) => {
         await request(app)
             .put(`/editoras/${idResposta}`)
-            .send({nome: 'Casa do código'})
+            .send(param)
 
         .expect(204)
     });
