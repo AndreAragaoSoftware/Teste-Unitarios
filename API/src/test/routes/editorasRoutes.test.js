@@ -38,6 +38,13 @@ describe('POST em /editoras', () => {
         .expect(201);
       idResposta = resposta.body.content.id // salvando o id da nova editora
     });
+    it('Não deve adicionar se o body estiver vazio', async () => {
+        await request(app)
+            .post('/editoras')
+            .send({})
+        
+            .expect(400);
+    });
 });
 
 describe('GET em /editoras/id', () => {
@@ -46,8 +53,18 @@ describe('GET em /editoras/id', () => {
       .get(`/editoras/${idResposta}`)
 
       .expect(200)
-  })
-})
+  });
+});
+
+describe('PUT em /editoras/id', () => {
+    it('Deve alterar o campo nome', async() => {
+        await request(app)
+            .put(`/editoras/${idResposta}`)
+            .send({nome: 'Casa do código'})
+
+        .expect(204)
+    });
+});
 
 describe('DELETE em /editoras/id', () => {
     it('Deletar o recurso adcionado', async () => {
